@@ -1,6 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>lista de citas</ion-title>
+    <ion-button>
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title>Gestion de citas</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,3 +15,21 @@
   <app-componente-padre/>
 
 </ion-content>
+
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button (click)="irAHome()" fill="clear">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title>Gestion de citas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ul>
+    <li *ngFor="let c of citas">{{ c.frase}}</li>
+  </ul>
+
+  <app-componente-padre/>
+
+</ion-content> -->

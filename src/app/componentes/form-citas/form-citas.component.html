@@ -1,4 +1,3 @@
-<form>
-  <input type="text"/>
-  <button>clickea!!</button>
-</form>
+<input [(ngModel)]="fraseStr" type="text"  name="frase"/>
+<input [(ngModel)]="autorStr" type="text"  name="autor"/>
+<button (click)="onClick()" type="button">Agregar +</button>

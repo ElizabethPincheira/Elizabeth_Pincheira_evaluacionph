@@ -1,7 +1,7 @@
 export class Cita{
     constructor(
-        public frase:string = '',
-        public autor:string = ''
+        public frase:String = '',
+        public autor:String = ''
     ){
 
     }

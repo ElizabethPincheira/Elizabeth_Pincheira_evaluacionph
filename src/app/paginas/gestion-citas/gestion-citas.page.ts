@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonButton, IonIcon } from '@ionic/angular/standalone';
 import { CitaService } from 'src/app/servicio/cita.service';
 import { Cita } from 'src/app/modelo/cita';
 import { ComponentePadreComponent } from 'src/app/componentes/componente-padre/componente-padre.component';
@@ -11,7 +11,9 @@ import { ComponentePadreComponent } from 'src/app/componentes/componente-padre/c
   templateUrl: './gestion-citas.page.html',
   styleUrls: ['./gestion-citas.page.scss'],
   standalone: true,
-  imports: [ ComponentePadreComponent, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [ ComponentePadreComponent, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
+    IonButton, IonIcon
+  ]
 })
 export class GestionCitasPage implements OnInit {
 
