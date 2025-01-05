@@ -7,7 +7,7 @@ import { Cita } from '../modelo/cita';
 export class CitaService {
 
   private _cita:Cita[]=[
-    new Cita("jajajaja", "jee")
+
   ]
 
   constructor() { }

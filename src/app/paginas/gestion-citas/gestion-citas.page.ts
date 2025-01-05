@@ -5,6 +5,10 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonButton, IonIcon } from 
 import { CitaService } from 'src/app/servicio/cita.service';
 import { Cita } from 'src/app/modelo/cita';
 import { ComponentePadreComponent } from 'src/app/componentes/componente-padre/componente-padre.component';
+import { addIcons } from 'ionicons';
+import { settingsOutline, arrowBackOutline } from 'ionicons/icons'
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-gestion-citas',
@@ -12,12 +16,14 @@ import { ComponentePadreComponent } from 'src/app/componentes/componente-padre/c
   styleUrls: ['./gestion-citas.page.scss'],
   standalone: true,
   imports: [ ComponentePadreComponent, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
-    IonButton, IonIcon
+    IonButton, IonIcon,  RouterModule
   ]
 })
 export class GestionCitasPage implements OnInit {
 
-  constructor(private citaService:CitaService) {}
+  constructor(private citaService:CitaService) {
+        addIcons({arrowBackOutline,settingsOutline});
+  }
 
   citas:Cita[] = []
 
