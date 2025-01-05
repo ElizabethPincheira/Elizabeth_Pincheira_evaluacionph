@@ -1,3 +1,20 @@
-<input [(ngModel)]="fraseStr" type="text"  name="frase"/>
-<input [(ngModel)]="autorStr" type="text"  name="autor"/>
-<button (click)="onClick()" type="button">Agregar +</button>
+<ion-card color="light">
+  <ion-card-header>
+    <ion-card-title>Crear una nueva cita</ion-card-title>
+  </ion-card-header>
+
+  <form #miFormulario="ngForm" (ngSubmit)="agregar()">
+    <ion-item>
+      <ion-input [(ngModel)]="fraseStr" name="cita" label="Cita" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="autorStr" name="autor" label="Autor" placeholder="Bon Clay" required></ion-input>
+    </ion-item>
+
+    <ion-button type="submit" fill="clear" [disabled]="miFormulario.invalid">Agregar +</ion-button>
+  </form>
+
+  <p *ngIf="mensajeFrase">El campo frase debe tener al menos 5 caracteres</p> 
+  <p *ngIf="mensajeAutor">El campo Autor debe tener al menos 2 caracteres</p> 
+</ion-card>
