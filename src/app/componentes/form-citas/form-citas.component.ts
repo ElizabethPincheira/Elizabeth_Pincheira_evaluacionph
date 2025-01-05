@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-form-citas',
   templateUrl: './form-citas.component.html',
   styleUrls: ['./form-citas.component.scss'],
+  standalone: true,
 })
 export class FormCitasComponent  implements OnInit {
 
