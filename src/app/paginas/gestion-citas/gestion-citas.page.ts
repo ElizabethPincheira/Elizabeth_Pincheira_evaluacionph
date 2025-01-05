@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { CitaService } from 'src/app/servicio/cita.service';
+import { Cita } from 'src/app/modelo/cita';
 
 @Component({
   selector: 'app-gestion-citas',
@@ -12,9 +14,15 @@ import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/stan
 })
 export class GestionCitasPage implements OnInit {
 
-  constructor() { }
+  constructor(private citaService:CitaService) {}
 
-  ngOnInit() {
+  citas:Cita[] = []
+
+  ngOnInit(): void {
+    this.citas = this.citaService.getCita()
   }
 
 }
+
+
+
