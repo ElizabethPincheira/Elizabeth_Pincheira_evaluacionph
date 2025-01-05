@@ -1,0 +1,7 @@
+{
+  "name": "AppFrasesElizabethPincheira",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
