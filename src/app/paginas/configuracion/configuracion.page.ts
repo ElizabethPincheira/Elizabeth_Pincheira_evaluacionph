@@ -5,7 +5,7 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonIcon} from '@ionic/angu
 import { addIcons } from 'ionicons';
 import { settingsOutline, arrowBackOutline } from 'ionicons/icons'
 import { RouterModule } from '@angular/router';
-import { ConfiguracionesEliminarCitaComponent } from 'src/app/configuraciones-eliminar-cita/configuraciones-eliminar-cita.component';
+import { ConfiguracionesEliminarCitaComponent } from 'src/app/componentes/configuraciones-eliminar-cita/configuraciones-eliminar-cita.component';
 
 
 @Component({

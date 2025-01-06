@@ -20,7 +20,7 @@ export class ListCitasComponent  implements OnInit {
     addIcons({trashOutline});
    }
 
-  //  listacitas: Array<{ cita: string, autor: string }> = [];
+    // listacitas: Array<{ cita: string, autor: string }> = [];
 
 
   ngOnInit() {}

@@ -18,22 +18,3 @@ export class ConfiguracionesEliminarCitaComponent  implements OnInit {
 
 }
 
-
-
-
-//   isActivado = false;
-
-//   constructor(private storage: Storage) { }
-
-//   async ngOnInit() {
-//     const sto = await this.storage.obtener("preferencia");
-//     this.isActivado = (sto.value === "true");
-//   }
-
-//   async guardarPreferencia(event: any) {
-//     this.isActivado = event.detail.checked;
-//     console.log("Guardar preferencia:", this.isActivado);
-//     this.isActivado ? await this.storage.guardar("preferencia", "true") : await this.storage.guardar("preferencia", "false")
-//   }
-
-// }

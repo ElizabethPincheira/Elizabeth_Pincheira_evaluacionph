@@ -5,6 +5,8 @@ import { IonHeader, IonToolbar, IonTitle, IonButtons, IonButton, IonIcon, IonCon
 import { addIcons } from 'ionicons';
 import { settingsOutline, add } from 'ionicons/icons'
 import { RouterModule } from '@angular/router';
+import {CardHomeCitaComponent} from 'src/app/componentes/card-home-cita/card-home-cita.component'
+
 
 @Component({
   selector: 'app-home',
@@ -12,7 +14,7 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['home.page.scss'],
   standalone: true,
   imports: [ RouterModule, CommonModule, IonContent, IonHeader, IonToolbar, IonTitle, 
-    IonButtons, IonButton, IonIcon, IonFab, IonFabButton],
+    IonButtons, IonButton, IonIcon, IonFab, IonFabButton, CardHomeCitaComponent],
 })
 export class HomePage {
 
