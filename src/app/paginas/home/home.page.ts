@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonHeader, IonToolbar, IonTitle, IonButtons, IonButton, IonIcon, IonContent} from '@ionic/angular/standalone'
+import { IonHeader, IonToolbar, IonTitle, IonButtons, IonButton, IonIcon, IonContent, 
+  IonFab, IonFabButton} from '@ionic/angular/standalone'
 import { addIcons } from 'ionicons';
-import { settingsOutline } from 'ionicons/icons'
+import { settingsOutline, add } from 'ionicons/icons'
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -10,14 +11,17 @@ import { RouterModule } from '@angular/router';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [ RouterModule, CommonModule, IonContent, IonHeader, IonToolbar, IonTitle, IonButtons, IonButton, IonIcon],
+  imports: [ RouterModule, CommonModule, IonContent, IonHeader, IonToolbar, IonTitle, 
+    IonButtons, IonButton, IonIcon, IonFab, IonFabButton],
 })
 export class HomePage {
 
   constructor() {
-    addIcons({settingsOutline})
+    addIcons({add,settingsOutline});
   }
 
   ngOnInit() {
   }
 }
+
+
