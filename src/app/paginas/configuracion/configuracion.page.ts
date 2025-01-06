@@ -5,6 +5,7 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonIcon} from '@ionic/angu
 import { addIcons } from 'ionicons';
 import { settingsOutline, arrowBackOutline } from 'ionicons/icons'
 import { RouterModule } from '@angular/router';
+import { ConfiguracionesEliminarCitaComponent } from 'src/app/configuraciones-eliminar-cita/configuraciones-eliminar-cita.component';
 
 
 @Component({
@@ -13,7 +14,7 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./configuracion.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, RouterModule,
-    IonIcon
+    IonIcon, ConfiguracionesEliminarCitaComponent
   ]
 })
 export class ConfiguracionPage implements OnInit {

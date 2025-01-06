@@ -1,17 +1,9 @@
 <ion-list>
-
-
-      <!-- Cada cita tiene su propia fila -->
       <ion-item *ngFor="let c of cita">
-
           <ion-label>
             <h3>{{ c.frase }}</h3>
             <p>{{ c.autor }}</p>
           </ion-label>
-
-        <!-- Botón de eliminar -->
         <ion-icon name="trash-outline" slot="end"></ion-icon>
       </ion-item>
-
-
 </ion-list>
