@@ -27,5 +27,4 @@ export class CardHomeCitaComponent implements OnInit {
 
 
 
-
 }

@@ -16,12 +16,19 @@ export class FormCitasComponent  implements OnInit {
   fraseStr:string = '';
   autorStr:string = '';
 
+  citas: { frase: string; autor: string }[] = [
+    { frase: "La vida es bella", autor: "Autor 1" },
+    { frase: "Vive el presente", autor: "Autor 2" },
+    { frase: "Cree en ti mismo", autor: "Autor 3" }
+  ];
+
+
   @Output() onCreate = new EventEmitter<{frase:string;autor:string}>()
+
 
   constructor() { 
     addIcons({addCircleOutline});
   }
-
 
   mensajeFrase: boolean = false
   mensajeAutor: boolean = false
@@ -56,6 +63,10 @@ onClick(){
       this.autorStr = '';
     }
   }
+
+
+
+  
 
 }
 
